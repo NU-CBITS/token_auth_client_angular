@@ -23,7 +23,7 @@
     return new AuthenticationTokensResource($resource, server, clientUuid);
   }
 
-  angular.module('TokenAuth')
+  angular.module('TokenAuth', [])
          .factory('authenticationTokensResource',
                   ['$resource', 'tokenAuthServer', 'tokenAuthClientUuid',
                   AuthenticationTokensResourceFactory]);
