@@ -1,0 +1,15 @@
+framework: mocha+chai
+src_files:
+  - node_modules/angular/angular.js
+  - node_modules/angular-resource/angular-resource.js
+  - node_modules/angular-mocks/angular-mocks.js
+  - src/TokenAuth.js
+  - test/TokenAuthSpec.js
+launchers:
+  CI:
+    command: ./node_modules/.bin/mocha -R tap
+    protocol: tap
+launch_in_dev:
+  - PhantomJS
+launch_in_ci:
+  - PhantomJS

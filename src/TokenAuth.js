@@ -1,6 +1,8 @@
 (function() {
   'use strict';
 
+  var VERSION = '0.0.3';
+
   function AuthenticationTokensResource($resource, server, clientUuid) {
     var RESOURCE_TYPE = 'authenticationTokens';
     var RESOURCE_PATH = '/api/authentication_tokens';
@@ -23,7 +25,8 @@
     return new AuthenticationTokensResource($resource, server, clientUuid);
   }
 
-  angular.module('TokenAuth', [])
+  angular.module('TokenAuth', ['ngResource'])
+         .constant('VERSION', VERSION)
          .factory('authenticationTokensResource',
                   ['$resource', 'tokenAuthServer', 'tokenAuthClientUuid',
                   AuthenticationTokensResourceFactory]);
