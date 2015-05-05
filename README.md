@@ -68,3 +68,17 @@ Thinks.get(params).$promise.then(function(response) {
   // do something
 });
 ```
+
+## Development
+
+Run unit tests
+
+```
+npm test
+```
+
+Lint
+
+```
+npm run lint
+```

@@ -1,0 +1,20 @@
+{
+  "name": "token_auth",
+  "version": "0.0.3",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src test",
+    "test": "./node_modules/.bin/testem $TESTEM_ENV"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.3.15",
+    "chai": "^2.3.0",
+    "eslint": "^0.20.0",
+    "mocha": "^2.2.4",
+    "sinon": "^1.14.1",
+    "testem": "^0.8.3"
+  },
+  "dependencies": {
+    "angular": "~1.3.15",
+    "angular-resource": "^1.3.15"
+  }
+}
