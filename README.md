@@ -10,6 +10,10 @@ This client is meant to work in conjunction with the
 
 ## Installation
 
+```
+npm install --save cbitstech/token_auth_client_angular#0.0.3
+```
+
 Include `TokenAuth.js` in your HTML page.
 
 ## Usage
