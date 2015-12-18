@@ -75,6 +75,12 @@ Thinks.get(params).$promise.then(function(response) {
 
 ## Development
 
+Install development dependencies
+
+```
+npm install
+```
+
 Run unit tests
 
 ```

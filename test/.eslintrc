@@ -10,7 +10,7 @@
   },
   'rules': {
     'quotes': [1, 'single'],
-    'global-strict': [2, 'always'],
+    'strict': [2, 'global'],
     'no-unused-expressions': [0]
   }
 }
