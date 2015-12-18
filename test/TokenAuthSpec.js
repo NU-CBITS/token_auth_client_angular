@@ -8,16 +8,12 @@ describe('AuthenticationTokensResource', function() {
   beforeEach(module('TokenAuth'));
 
   beforeEach(module(function($provide) {
-    $provide.service('tokenAuthServer', function() {
-      return function() {
-        return '//foo';
-      };
+    $provide.constant('tokenAuthServer', function() {
+      return '//foo';
     });
 
-    $provide.service('tokenAuthClientUuid', function() {
-      return function() {
-        return 'asdf1234';
-      };
+    $provide.constant('tokenAuthClientUuid', function() {
+      return 'asdf1234';
     });
   }));
 
